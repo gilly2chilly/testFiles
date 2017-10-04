@@ -1,0 +1,209 @@
+* {
+    color: white;
+    background-color: blue;
+}
+
+
+
+
+body {
+    font-size: 1em;
+    /* em's are 16 pixels and can be used to create ratios for
+    our elements in relation to the original em value declared.
+    rem is similar except it bases itself off of the root html
+    element and therfore doesn't have inheritance issues like em*/
+    font-family: "Times New Roman", Arial;
+}
+
+h1 {
+    font-size: 2em;
+//color: red;
+    text-align: center;
+    /* the below format of rgba specifies the rgb values but also
+    give the ability to assign a value for transparancy of the color
+    and its background, with 1 being full color and decimals a percentage
+    of the color that will show against the background. */
+    background-color:rgba(255,140,0, .99);
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#gillyTop {
+    color: pink;
+}
+
+.titles {
+    color: red;
+}
+
+.people {
+    color: orange;
+}
+
+ol li {
+    background-color: yellow;
+    color: green;
+}
+
+ul li{
+    background-color: green;
+    color: yellow;
+}
+
+p:hover {
+    color: orange;
+}
+
+a:visited {
+    color: yellow;
+}
+
+.tasteMaker {
+    /* The four padding and border options can be done seperately or in one line
+    depending on need. If the top and bottom are the same number and the sides are
+    the same it can just be padding: x x; padding x x x; will do top bottom and sides,
+    or all four numbers can be called out with padding x x x x;. padding x; is all
+    the same.Padding is the spacing between the content and border, margin is between
+    border and other elements in the page by their borders.
+    padding-top: 25px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+    padding-left: 75px; */
+    padding: 10px 20px;
+    border: 10px solid purple;
+    width: 15%;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 15px 15px 10px rgba(0,0,0,.8);
+    border-radius: 50px 10px;
+}
+
+/* This can also just be left to class to select all classes, set to a specific class for more
+selectivity, or to a specific tag and then a combination of class for most selective targeting */
+legend[class="testSelectors"] {
+    color: darkorange;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+p > a {
+    font-size: 30px;
+}
+
+li:first-child {
+    color: firebrick;
+}
+
+/* Using the ^ symbol allows you to search for all href's that start with the specified text,
+this can be useful if they are all urls and you want to set it to http: and select them all.
+there is also the $ symbol which allows you to do the same but with the last part of a file
+so you can target file extensions such as .pdf or .jpg. finally, the star value can do a search
+within the reference to pull any word that it contains */
+a[href^="another"] {
+    color: green;
+}
+
+input[type="checkbox"]:checked + label{
+    color: firebrick;
+    font-weight: bold;
+}
+
+/* Thr selectors below can grab an element by it's number in a group or whether it's an odd or
+even entry in that group. as well, it can be used with (an+b) where n is static, b is the first
+item we want to select and a is the number of values from b that we would like to select as well */
+#moreTestsList li:nth-child(even) {
+    color: pink;
+    background-color: purple;
+}
+#moreTestsList li:nth-child(2n+1) {
+    color: green;
+    background-color: pink;
+}
+
+/* nth of type will allow us to specify types of elements that are in the group in case they
+are not sequential in the layout. This allows us to find for example the fourth div in a group
+even if there are spans and headers scattered in between.
+div:nth-of-type(4) {
+	whatever we want to happen to that div
+}  */
+
+@media (min-width: 200px) {
+    img {
+        border: 10px solid purple;
+        margin: 15px 0px 40px 75px;
+    }
+}
+
+/* root is the topmost element in a class, so even though we put a background variable before
+at the top of this css, behind that is still root to be written to.
+:root {
+	background: yellow;
+}  */
+
+/* This will taget whatever the url is last pointing at and give it specific properties. */
+:target {
+    background: yellow;
+    font-size: 25px;
+}
+
+/* this will target all inputs that are not the type of submit and give them a border shadow
+inside of their input field that is a transparent white color. */
+input:not([type="submit"]) {
+    box-shadow: inset 0 20px 0 rgba(255,255,255,.25);
+}
+
+/* Pseudo element selectors */
+.pageDescription::first-letter {
+    float: left;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    padding: 5px 10px;
+    background: #384047;
+    margin: -5px 0px 10px 10px;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: blue;
+    margin: 0 10px;
+}
+
+#gillyLinkText a::after {
+    content: attr(href);
+    display: inline-block;
+    color: brown;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+#gillyLinkText a {
+    border: solid 1px;
+}
+
+/* leaverou.github.io/animatable/ */
+
+body {
+    perspective: 1000px;
+}
+
+#jellyFishies {
+    transform: rotateY(30deg);
+    transition: transform 1s ease-out;
+    transform-style: preserve-3d;
+}
+
+#jellyFishies:hover {
+    transform: scale(1.5) rotate(30deg) rotateY(-180deg);
+}

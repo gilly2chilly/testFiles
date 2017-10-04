@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gilly Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/gillyPageLooks.css">
+    <script type="text/javascript" src="./scripts/testScripts.js"></script>
+</head>
+<body>
+<h1>Test Page for New Web</h1>
+<div>
+    This is a <span>div</span> (block level element).
+</div>
+<br>
+<span>
+			This is a span (in line element).
+		</span>
+<hr>
+<p class="pageDescription">
+    This is the test page I am using for tags There are also many different examples of other types of
+    code and formatting on here from stylesheets, scripts and selectors. To be able to fully understand
+    the notes of this page, open the source files with notepad to view all the parameters.
+</p>
+<p>
+    <em>There are many test pages, this one is mine.</em> <strong>Without me, my test page is useless; without my test page, I am useless</strong>.
+</p>
+<blockquote cite="http://example.com/story.html">
+    <p>
+        This is to test quotes.It adds a space.
+    </p>
+</blockquote>
+<p>
+    A wise Gilly once said<q cite="http://example.com/philosphy.html">I drink, therefore I am.</q>
+</p>
+<a href="#gillyLinkText" id="gillyTop">
+    Gilly's Link
+</a>
+<br><br>
+<form action="#" method="POST" name="gilly_form">
+    <fieldset>
+        <legend class="testSelectors">Important Information</legend>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"><br>
+        <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label><br>
+        <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label><br>
+        Foods to Eat: <br>
+        <input type="checkbox" name="foods" value="Hot Cheetos" id="hotCheetos"><label for="hotCheetos">Hot Cheetos</label><br>
+        <input type="checkbox" name="foods" value="Slim Jim" id="slimJim"><label for="slimJim">Slim Jim</label><br>
+        <input type="checkbox" name="foods" value="Pizza" id="pizza"><label for="pizza">Pizza</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Optional Items</legend>
+        <label for="essay">What you about, tell us.<br></label>
+        <textarea name="essay" id="essay" rows="10" cols="30"></textarea><br>
+        <label for="continent">Where you be from?</label><br>
+        <select name="continent" id="continent">
+            <optgroup label="Americas">
+                <option>North America</options>
+                <option>South America</options>
+                <optgroup label="Americas">
+                    <option>Europe</options>
+                    <option>Asia</options>
+                    <optgroup label="Other">
+                        <option>Australia</options>
+        </select>
+        <br>
+    </fieldset>
+    <input type="submit" value="Hi Ho Silver!"><br>
+</form>
+<p>
+    When we use the <code>drive()</code> function on the <code>vehicle</code> object, it moves forward.
+</p>
+<pre>
+			Here is some text.
+			It is....
+				preformatted!
+		</pre>
+<pre><code>
+			if(!foo) {
+				then bar = 3;
+			}
+		</code></pre>
+<p>
+    I know how to use <abbr title="self contained breathing apparatus">SCUBA</abbr> gear.
+</p>
+<address>
+    Gilly2Chilly<br>
+    123 Gilly Road<br>
+    Chilly City, USA
+</address>
+<p>
+    My favorite book is <cite>The Great Gilsby</cite> by Gilly Orona.
+</p>
+<ol>
+    <li>Item the First</li>
+    <ul>
+        <li>Bullet, Son of ItF</li>
+        <li>Bulleter, Son of ItF</li>
+        <ul>
+            <li>Dot, Son of Bulleter, Son of ItF</li>
+        </ul>
+    </ul>
+    <li>Item the Second</li>
+    <ul>
+        <li>Bulletsby, Son of ItS</li>
+    </ul>
+    <li>Item the Third</li>
+</ol>
+<dl>
+    <dt class="titles">Video Pros</dt>
+    <dd class="people">Gilly</dd>
+    <dt class="titles">Teachers</dt>
+    <dd class="people">Gilly Again</dt>
+</dl>
+<li>More List Testing</li>
+<ul id="moreTestsList">
+    <li>Testers</li>
+    <li>Testees</li>
+    <li>Testest</li>
+    <li>Testly</li>
+</ul>
+
+<p>This is a Jellyfish</p>
+<img src="./images/jellyFish.jpg" id="jellyFishies" class="side-a" title="Jellfish floating in the water." alt="Jellfish floating in the water." width="300" height="200">
+<p class="tasteMaker" onclick="alert('Never!')">How Tasty!!!</p>
+<p>Below is a preview of another Gilly page, want to <a href="anotherGillyPage.html">go there?</a></p>
+<!--This is where my other page will be displayed within an iFrame.-->
+<iframe width="300" height="200" src="anotherGillyPage.html"></iframe>
+<br><br>
+<table border="2" cellpadding="3" cellspacing="3">
+    <thead>
+    <tr>
+        <th valign="middle">Uncomparable Fruits</th>
+        <th valign="middle">Indigestable Vegetables</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td colspan="2" align="center">Thanks for checking out my Table!</td>
+    </tr>
+    </tfoot>
+    <tr>
+        <td>Apples</td>
+        <td>All</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>o</td>
+    </tr>
+    <tr>
+        <td>Oranges</td>
+        <td>Dem</td>
+    </tr>
+</table>
+<p id="gillyLinkText">
+    My link takes me here.<br>
+    <a href="#gillyTop">Back to Gilly's Link</a>
+</p>
+</body>
+</html>
