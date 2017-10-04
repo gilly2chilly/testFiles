@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "a basic html page with js for testing",
   "scripts": {
-    "test": "mocha \"./src/test/*-test.js\""
+    "test": "mocha \"./src/test/main-test.js\""
   },
   "author": "gilly2chilly",
   "license": "N/A",
@@ -15,5 +15,8 @@
     "chai": "^4.1.2",
     "express": "^4.16.1",
     "mocha": "^4.0.0"
+  },
+  "dependencies": {
+    "request": "^2.83.0"
   }
 }
