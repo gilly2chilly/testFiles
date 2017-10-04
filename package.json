@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "a basic html page with js for testing",
   "scripts": {
-    "test": "mocha \"./src/test/main-test.js\""
+    "test": "mocha \"./src/test/*-test.js\""
   },
   "author": "gilly2chilly",
   "license": "N/A",
